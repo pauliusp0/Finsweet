@@ -1,3 +1,16 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+/* Variables */
+:root {
+  --black-color: #1e1b1b;
+  --primary-color: #ff6433;
+  --secondary-color: #661ce7;
+  --mint-color: #00d289;
+  --steelGray-color: #e2e6e9;
+  --lightGray-color: #f2f2f2;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +23,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
