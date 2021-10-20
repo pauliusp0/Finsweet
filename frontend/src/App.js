@@ -1,5 +1,11 @@
+import Banner from './components/Banner/Banner';
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <Banner />
+    </>
+  );
 }
 
 export default App;
