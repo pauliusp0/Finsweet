@@ -74,3 +74,8 @@ export const Caption = styled.p`
 
   color: #5b5b5b;
 `;
+
+export const Container = styled.section`
+  max-width: 1300px;
+  margin: 0 auto;
+`;
