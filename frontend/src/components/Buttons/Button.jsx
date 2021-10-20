@@ -13,6 +13,7 @@ const PrimaryBtn = styled.button`
   font-weight: 600;
   font-size: 18px;
   line-height: 175%;
+  cursor: pointer;
 `;
 
 const Button = ({ primary, secondary, text }) => {

@@ -30,3 +30,83 @@ code {
   padding: 0;
   box-sizing: border-box;
 }
+
+h1 {
+  /* Heading (h1) */
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 84px;
+
+  /* identical to box height, or 131% */
+  letter-spacing: -0.03em;
+
+  /* Black */
+  color: var(--black-color);
+}
+h2 {
+  /* Heading (h2) */
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 76px;
+
+  /* identical to box height, or 131% */
+  letter-spacing: -0.03em;
+  /* Black */
+  color: var(--black-color);
+}
+h3 {
+  /* Heading(h3) */
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 140%;
+
+  /* or 67px */
+  letter-spacing: -0.03em;
+  /* Black */
+  color: var(--black-color);
+}
+h4 {
+  /* Heading (H4) */
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 140%;
+
+  /* identical to box height, or 56px */
+  letter-spacing: -0.03em;
+  /* Black */
+  color: var(--black-color);
+}
+h5 {
+  /* Heading 5 */
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+
+  /* identical to box height, or 150% */
+  letter-spacing: -0.03em;
+  /* Black */
+  color: var(--black-color);
+}
+h6 {
+  /* Heading 6 */
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+
+  /* identical to box height, or 30px */
+  letter-spacing: -0.03em;
+  /* Black */
+  color: var(--black-color);
+}
