@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../assets/Logo.png';
+import Logo from '../../assets/Logo.svg';
 import DialIcon from '../../assets/Assistance-Icon.svg';
 import styled from 'styled-components';
 import { Body01, Caption } from '../Global.style';
