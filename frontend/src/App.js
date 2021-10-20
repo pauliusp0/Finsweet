@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import HomePage from './pages/HomePage';
@@ -22,10 +21,6 @@ function App() {
       </Router>
     </>
   );
-=======
-function App() {
-  return <></>;
->>>>>>> 887574838f34c54eda10ee29aba35f0a0adb9879
 }
 
 export default App;
