@@ -64,19 +64,19 @@ const Navbar = () => {
         <nav>
           <ul>
             <li>
-              <Link>Home</Link>
+              <Link to='/'>Home</Link>
             </li>
             <li>
-              <Link>About us</Link>
+              <Link to='/about-us'>About us</Link>
             </li>
             <li>
-              <Link>Services</Link>
+              <Link to='/services'>Services</Link>
             </li>
             <li>
-              <Link>Blog</Link>
+              <Link to='/blog'>Blog</Link>
             </li>
             <li>
-              <Link>Contact</Link>
+              <Link to='/contact'>Contact</Link>
             </li>
           </ul>
         </nav>
