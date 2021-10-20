@@ -18,7 +18,7 @@ const StyledNavbar = styled.header`
 
 const Line = styled.div`
   opacity: 0.36;
-
+  margin-right: 10px;
   /* Grey */
   border: 1px solid #939191;
   transform: rotate(90deg);
@@ -26,10 +26,17 @@ const Line = styled.div`
 `;
 
 const Assistance = styled.div`
+  width: 181px;
+  height: 56px;
   display: flex;
   gap: 14px;
+  align-items: center;
   p {
     opacity: 1;
+  }
+  img {
+    width: 40px;
+    height: 40px;
   }
 `;
 
