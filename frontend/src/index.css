@@ -1,3 +1,16 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+/* Variables */
+:root {
+  --black-color: #1e1b1b;
+  --primary-color: #ff6433;
+  --secondary-color: #661ce7;
+  --mint-color: #00d289;
+  --steelGray-color: #e2e6e9;
+  --lightGray-color: #f2f2f2;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +23,90 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  /* Heading (h1) */
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 84px;
+
+  /* identical to box height, or 131% */
+  letter-spacing: -0.03em;
+
+  /* Black */
+  color: var(--black-color);
+}
+h2 {
+  /* Heading (h2) */
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 76px;
+
+  /* identical to box height, or 131% */
+  letter-spacing: -0.03em;
+  /* Black */
+  color: var(--black-color);
+}
+h3 {
+  /* Heading(h3) */
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 140%;
+
+  /* or 67px */
+  letter-spacing: -0.03em;
+  /* Black */
+  color: var(--black-color);
+}
+h4 {
+  /* Heading (H4) */
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 140%;
+
+  /* identical to box height, or 56px */
+  letter-spacing: -0.03em;
+  /* Black */
+  color: var(--black-color);
+}
+h5 {
+  /* Heading 5 */
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+
+  /* identical to box height, or 150% */
+  letter-spacing: -0.03em;
+  /* Black */
+  color: var(--black-color);
+}
+h6 {
+  /* Heading 6 */
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+
+  /* identical to box height, or 30px */
+  letter-spacing: -0.03em;
+  /* Black */
+  color: var(--black-color);
 }
