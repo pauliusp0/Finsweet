@@ -42,7 +42,7 @@ const TeamMember = ({ img, title, body }) => {
 
 export default TeamMember;
 
-Step.propTypes = {
+TeamMember.propTypes = {
   title: PropTypes.string.isRequired,
   body: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
