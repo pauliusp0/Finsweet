@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import { Title02 } from '../Global.style';
+import PropTypes from 'prop-types';
 
 const Card = styled.div`
   background: #ffffff;
@@ -34,12 +34,17 @@ const Card = styled.div`
   }
 `;
 
-const ServicesCard = ({ icon, text }) => {
+const ServicesCard = ({ icon, title }) => {
   return (
     <Card>
-      <Title02>{text}</Title02>
+      <Title02>{title}</Title02>
     </Card>
   );
 };
 
 export default ServicesCard;
+
+ServicesCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  icon: PropTypes.element.isRequired,
+};
