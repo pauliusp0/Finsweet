@@ -9,9 +9,14 @@ import {
   Title02,
 } from '../../components/Global.style';
 import {
+  Feature,
+  Form,
   Header,
   HeaderLeft,
   HeaderRight,
+  Quote,
+  QuoteLeft,
+  QuoteRight,
   Rating,
   Service,
 } from './HomePage.style';
@@ -20,6 +25,10 @@ import {
 import clockIcon from '../../assets/clock-icon.svg';
 import fullStar from '../../assets/full-star.svg';
 import emptyStar from '../../assets/empty-star.svg';
+import wrenchIcon from '../../assets/wrench-icon.svg';
+import mechanicIcon from '../../assets/mechanic-icon.svg';
+import moneyIcon from '../../assets/money-icon.svg';
+import arrow from '../../assets/arrow.svg';
 
 // components
 import Button from '../../components/Buttons/Button';
@@ -76,6 +85,57 @@ const HomePage = () => {
           </HeaderRight>
         </Container>
       </Header>
+      <Quote>
+        <Container>
+          <QuoteLeft>
+            <h2>We are taking car servicing seriously</h2>
+            <Feature>
+              <img src={wrenchIcon} alt='' />
+              <div>
+                <Title02>Convenient service</Title02>
+                <Body02>
+                  Through True Rich Attended does no end it his mother since
+                  real had half every him.
+                </Body02>
+              </div>
+            </Feature>
+            <Feature>
+              <img src={mechanicIcon} alt='' />
+              <div>
+                <Title02>Convenient service</Title02>
+                <Body02>
+                  Through True Rich Attended does no end it his mother since
+                  real had half every him.
+                </Body02>
+              </div>
+            </Feature>
+            <Feature>
+              <img src={moneyIcon} alt='' />
+              <div>
+                <Title02>Convenient service</Title02>
+                <Body02>
+                  Through True Rich Attended does no end it his mother since
+                  real had half every him.
+                </Body02>
+              </div>
+            </Feature>
+            <div>
+              <Body01>Know more about us</Body01>
+              <img src={arrow} alt='' />
+            </div>
+          </QuoteLeft>
+          <QuoteRight>
+            <h3>Get a quote for the car service</h3>
+            <Form>
+              <input type='text' placeholder='Enter your location' />
+              <input type='text' placeholder='Enter your location' />
+              <input type='text' placeholder='Enter your location' />
+              <input type='text' placeholder='Enter your number' />
+              <Button primary text='Get your quote' />
+            </Form>
+          </QuoteRight>
+        </Container>
+      </Quote>
     </main>
   );
 };
