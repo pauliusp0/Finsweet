@@ -18,11 +18,11 @@ const StyledNavbar = styled.header`
 
 const Line = styled.div`
   opacity: 0.36;
-  margin-right: 10px;
   /* Grey */
   border: 1px solid #939191;
   transform: rotate(90deg);
   width: 42px;
+  margin: 12px;
 `;
 
 const Assistance = styled.div`
@@ -31,6 +31,8 @@ const Assistance = styled.div`
   display: flex;
   gap: 14px;
   align-items: center;
+  margin-right: 20px;
+
   p {
     opacity: 1;
   }
@@ -47,7 +49,8 @@ const NavbarRight = styled.div`
     display: flex;
     li {
       list-style: none;
-      padding: 20px;
+      /* padding: 20px; */
+      padding-left: 40px;
       /* Body 02 */
       font-family: Manrope;
       font-style: normal;
