@@ -11,14 +11,17 @@ import {
 import {
   Feature,
   Form,
-  Header,
+  HeaderSection,
   HeaderLeft,
   HeaderRight,
-  Quote,
+  QuoteSection,
   QuoteLeft,
   QuoteRight,
   Rating,
   Service,
+  ProcessSection,
+  ProcessLeft,
+  ProcessRight,
 } from './HomePage.style';
 
 // icons
@@ -32,11 +35,12 @@ import arrow from '../../assets/arrow.svg';
 
 // components
 import Button from '../../components/Buttons/Button';
+import Step from '../../components/Step/Step';
 
 const HomePage = () => {
   return (
     <main>
-      <Header>
+      <HeaderSection>
         <Container>
           <HeaderLeft>
             <h1>Get your vehicle service done online at one place</h1>
@@ -84,8 +88,8 @@ const HomePage = () => {
             />
           </HeaderRight>
         </Container>
-      </Header>
-      <Quote>
+      </HeaderSection>
+      <QuoteSection>
         <Container>
           <QuoteLeft>
             <h2>We are taking car servicing seriously</h2>
@@ -135,7 +139,38 @@ const HomePage = () => {
             </Form>
           </QuoteRight>
         </Container>
-      </Quote>
+      </QuoteSection>
+      <ProcessSection>
+        <Container>
+          <ProcessLeft>
+            <h2>We follow a clear process to help you out.</h2>
+            <Body02>
+              Through True Rich Attended does no end it his mother since real
+              had half every him case in packages enquire
+            </Body02>
+            <Button primary text='Learn more' />
+          </ProcessLeft>
+          <ProcessRight>
+            <Step
+              title='Get a Quote'
+              body='Through True Rich Attended does no end it his mother since real had half every.'
+              number='01'
+              line
+            />
+            <Step
+              title='Book an Appointment'
+              body='Through True Rich Attended does no end it his mother since real had half every.'
+              number='02'
+              line
+            />
+            <Step
+              title='Get your Service Done'
+              body='Through True Rich Attended does no end it his mother since real had half every.'
+              number='03'
+            />
+          </ProcessRight>
+        </Container>
+      </ProcessSection>
     </main>
   );
 };

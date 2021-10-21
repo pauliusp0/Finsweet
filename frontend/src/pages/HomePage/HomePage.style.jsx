@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 // HEADER  SECTION STYLE
 
-export const Header = styled.section`
+export const HeaderSection = styled.section`
   padding: 80px 0 128px 0;
 
   > section {
@@ -134,7 +134,7 @@ export const Rating = styled.div`
 
 // QUOTE SECTION STYLE
 
-export const Quote = styled.section`
+export const QuoteSection = styled.section`
   background: #e2e6e9;
   height: 894px;
   > section {
@@ -213,4 +213,35 @@ export const Form = styled.form`
     height: 64px;
     margin-top: 32px;
   }
+`;
+
+// PROCESS SECTION STYLE
+
+export const ProcessSection = styled.section`
+  height: 783px;
+  > section {
+    height: 527px;
+    padding-top: 128px;
+    display: flex;
+    gap: 131px;
+  }
+`;
+
+export const ProcessLeft = styled.div`
+  width: 524px;
+  height: 396px;
+  h2 {
+    margin-bottom: 16px;
+  }
+  p {
+    margin-bottom: 32px;
+  }
+`;
+
+export const ProcessRight = styled.div`
+  width: 432px;
+  height: 527px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 `;

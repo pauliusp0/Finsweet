@@ -10,15 +10,18 @@ const StyledStep = styled.div`
   > div:first-child {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    /* align-content: center; */
+    /* text-align: center; */
   }
 `;
 
 const Line = styled.div`
-  border: 2px dashed #ff6433;
   transform: rotate(90deg);
   width: 71px;
-  margin-bottom: 45px;
+  /* margin-bottom: 61.1px; */
+  margin-top: 50px;
+  border: 2px dashed #ff6433;
 `;
 
 const Circle = styled.div`
@@ -45,10 +48,15 @@ const Circle = styled.div`
 
 const Text = styled.div`
   width: 336px;
-  margin-left: 34px;
+  height: 152px;
+  margin-left: 24px;
   margin-top: 13px;
   p:first-child {
     margin-bottom: 8px;
+  }
+  p:last-child {
+    height: 96px;
+    margin-bottom: 16px;
   }
 `;
 
