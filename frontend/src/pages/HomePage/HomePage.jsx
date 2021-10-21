@@ -22,6 +22,7 @@ import {
   ProcessSection,
   ProcessLeft,
   ProcessRight,
+  OfferSection,
 } from './HomePage.style';
 
 // icons
@@ -32,10 +33,19 @@ import wrenchIcon from '../../assets/wrench-icon.svg';
 import mechanicIcon from '../../assets/mechanic-icon.svg';
 import moneyIcon from '../../assets/money-icon.svg';
 import arrow from '../../assets/arrow.svg';
+import wheelRepairIcon from '../../assets/wheel-repair-icon.svg';
+import oilFilterIcon from '../../assets/oil-filter-icon.svg';
+import insuranceIcon from '../../assets/insurance-icon.svg';
+import engineRepairIcon from '../../assets/engine-repair-icon.svg';
+import diagnosticsIcon from '../../assets/diagnostics-icon.svg';
+import customServiceIcon from '../../assets/custom-service-icon.svg';
+import bodyWorkIcon from '../../assets/body-work-icon.svg';
+import batteriesIcon from '../../assets/batteries-icon.svg';
 
 // components
 import Button from '../../components/Buttons/Button';
 import Step from '../../components/Step/Step';
+import ServicesCard from '../../components/ServiceCard/ServiceCard';
 
 const HomePage = () => {
   return (
@@ -171,6 +181,24 @@ const HomePage = () => {
           </ProcessRight>
         </Container>
       </ProcessSection>
+      <OfferSection>
+        <Container>
+          <div>
+            <Title02>What we Offer</Title02>
+            <h2>We offer full service auto repair & maintenance</h2>
+          </div>
+          <div>
+            <ServicesCard title='Diagnostics' icon={diagnosticsIcon} />
+            <ServicesCard title='Engine Repair' icon={engineRepairIcon} />
+            <ServicesCard title='Wheel Repair' icon={wheelRepairIcon} />
+            <ServicesCard title='Oil Filter' icon={oilFilterIcon} />
+            <ServicesCard title='Body Work' icon={bodyWorkIcon} />
+            <ServicesCard title='Batteries' icon={batteriesIcon} />
+            <ServicesCard title='Insurance Claim' icon={insuranceIcon} />
+            <ServicesCard title='Custom Service' icon={customServiceIcon} />
+          </div>
+        </Container>
+      </OfferSection>
     </main>
   );
 };

@@ -245,3 +245,30 @@ export const ProcessRight = styled.div`
   flex-direction: column;
   gap: 16px;
 `;
+
+// OFFER SECTION
+
+export const OfferSection = styled.section`
+  height: 1052px;
+  background: var(--lightGray-color);
+  > section {
+    padding-top: 128px;
+    h2 {
+      width: 858px;
+      height: 152px;
+      margin-top: 8px;
+    }
+    > div {
+      text-align: center;
+      width: 858px;
+      margin: 0 auto;
+    }
+    > div:last-child {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      width: 100%;
+      margin-top: 64px;
+    }
+  }
+`;
