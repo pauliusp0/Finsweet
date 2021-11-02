@@ -56,7 +56,6 @@ const Text = styled.div`
   }
   p:last-child {
     height: 96px;
-    margin-bottom: 16px;
   }
 `;
 

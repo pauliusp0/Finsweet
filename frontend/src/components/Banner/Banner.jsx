@@ -24,12 +24,6 @@ const StyledBanner = styled.div`
   button {
     margin-top: 48px;
   }
-  img {
-    width: 944px;
-    height: 502px;
-    background-position: center;
-    background-size: 110%;
-  }
 `;
 
 const Image1 = styled.img`
@@ -44,6 +38,7 @@ const Image2 = styled.img`
   height: 502px;
   object-fit: cover;
   object-position: center;
+  margin-left: 100px;
 `;
 
 const Banner = () => {

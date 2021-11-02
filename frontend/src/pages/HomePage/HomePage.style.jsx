@@ -272,3 +272,18 @@ export const OfferSection = styled.section`
     }
   }
 `;
+
+// Experience section
+
+export const ExperienceSection = styled.section`
+  height: 210px;
+
+  h2 {
+    color: var(--secondary-color);
+  }
+  > section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 48px;
+  }
+`;

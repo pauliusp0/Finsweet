@@ -6,6 +6,7 @@ import {
   Body02,
   Caption,
   Container,
+  Title01,
   Title02,
 } from '../../components/Global.style';
 import {
@@ -23,6 +24,7 @@ import {
   ProcessLeft,
   ProcessRight,
   OfferSection,
+  ExperienceSection,
 } from './HomePage.style';
 
 // icons
@@ -46,6 +48,7 @@ import batteriesIcon from '../../assets/batteries-icon.svg';
 import Button from '../../components/Buttons/Button';
 import Step from '../../components/Step/Step';
 import ServicesCard from '../../components/ServiceCard/ServiceCard';
+import Banner from '../../components/Banner/Banner';
 
 const HomePage = () => {
   return (
@@ -199,6 +202,27 @@ const HomePage = () => {
           </div>
         </Container>
       </OfferSection>
+      <Banner />
+      <ExperienceSection>
+        <Container>
+          <div>
+            <h2>20+</h2>
+            <Title02>Professional</Title02>
+          </div>
+          <div>
+            <h2>10+</h2>
+            <Title02>Years Experience</Title02>
+          </div>
+          <div>
+            <h2>12K+</h2>
+            <Title02>Service Closed</Title02>
+          </div>
+          <div>
+            <h2>100%</h2>
+            <Title02>Customer Satisfaction</Title02>
+          </div>
+        </Container>
+      </ExperienceSection>
     </main>
   );
 };
