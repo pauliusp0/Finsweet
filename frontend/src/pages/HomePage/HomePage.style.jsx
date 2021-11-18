@@ -274,9 +274,9 @@ export const OfferSection = styled.section`
 `;
 
 // Experience section
-
 export const ExperienceSection = styled.section`
   height: 210px;
+  background-color: var(--lightgray-color);
 
   h2 {
     color: var(--secondary-color);
@@ -285,5 +285,106 @@ export const ExperienceSection = styled.section`
     display: flex;
     justify-content: space-between;
     padding-top: 48px;
+  }
+`;
+
+// Brands section
+export const BrandsSection = styled.section`
+  height: 611px;
+  background: #fafafa;
+  > section {
+    padding-top: 128px;
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 41px;
+  }
+  > section > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 39px;
+  }
+`;
+
+// Testimonial section
+export const TestimonialSection = styled.section`
+  height: 938px;
+  background-color: var(--lightgray-color);
+  padding-top: 128px;
+
+  h3 {
+    width: 909px;
+    height: 134px;
+    text-align: center;
+    margin: 0 auto;
+  }
+`;
+
+export const TestimonialCardsWrapper = styled.div`
+  display: flex;
+  padding-top: 94px;
+  gap: 48px;
+`;
+
+export const CardsNavigationWrapper = styled.div`
+  padding-top: 16px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 558px;
+`;
+
+export const Lines = styled.div`
+  display: flex;
+  gap: 15px;
+
+  > div:first-child {
+    width: 32px;
+    height: 0px;
+
+    /* Grey */
+    outline: 4px solid red;
+    box-sizing: border-box;
+    outline-offset: -2px;
+  }
+
+  > div {
+    width: 32px;
+    height: 0px;
+
+    /* Grey */
+    outline: 4px solid #939191;
+    box-sizing: border-box;
+    outline-offset: -2px;
+  }
+`;
+
+export const TestimonialNavigation = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  > div:first-child {
+    width: 48px;
+    height: 48px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  > div:last-child {
+    width: 62px;
+    height: 62px;
+
+    /* Black */
+    background: #1e1b1b;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
 `;

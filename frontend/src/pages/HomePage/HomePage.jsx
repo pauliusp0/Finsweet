@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // styles
 import {
@@ -25,6 +25,12 @@ import {
   ProcessRight,
   OfferSection,
   ExperienceSection,
+  BrandsSection,
+  TestimonialSection,
+  Lines,
+  TestimonialCardsWrapper,
+  CardsNavigationWrapper,
+  TestimonialNavigation,
 } from './HomePage.style';
 
 // icons
@@ -43,12 +49,26 @@ import diagnosticsIcon from '../../assets/diagnostics-icon.svg';
 import customServiceIcon from '../../assets/custom-service-icon.svg';
 import bodyWorkIcon from '../../assets/body-work-icon.svg';
 import batteriesIcon from '../../assets/batteries-icon.svg';
+import testimonialArrowLg from '../../assets/testimonial-arrow-lg.svg';
+import testimonialArrowSl from '../../assets/testimonial-arrow-sl.svg';
+
+// logos
+import logo1 from '../../assets/logo1.svg';
+import logo2 from '../../assets/logo2.svg';
+import logo3 from '../../assets/logo3.svg';
+import logo4 from '../../assets/logo4.svg';
+import logo5 from '../../assets/logo5.svg';
+
+// Images
+import mechanicImg from '../../assets/mechanic-header-img.png';
 
 // components
 import Button from '../../components/Buttons/Button';
 import Step from '../../components/Step/Step';
 import ServicesCard from '../../components/ServiceCard/ServiceCard';
 import Banner from '../../components/Banner/Banner';
+import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
+import Carousel from '../../components/Carousel';
 
 const HomePage = () => {
   return (
@@ -94,11 +114,7 @@ const HomePage = () => {
                 </div>
               </div>
             </Rating>
-
-            <img
-              src='https://s3-alpha-sig.figma.com/img/9553/8f5b/14830d8e85a1f1a83f2f3898d84e44ce?Expires=1635724800&Signature=FSBn8Jau2B4N3IbZ47scZ9Kffet~tAoU8g~taG04PzxbbxS52LcjZurpNsa7l9sMZnd202nMF7sKC7v-spYLqZNHJ9jeTiR7b3WzDmKiHwBBIAEuWA0rn~~aH95Cknp7-oBRyrTPyVXe6m3m4n4P2UFJXiG4K-qsXJ3UOsGI0E0rpTmz3RauYE6VzW5~3kaC2mnMSry0ay9idlSwu-MJL6X5DconQlrfjdf5oeoh2RJ8YXYXSGZSnDq4btAUMiBk3vQHpZ1zPghd29yI2x8TXdPz-KzeQktHZT052BkYB02lR6GRYCmijE6Nqngt6Bqp8PEm3qosvCtOHTyFkRtiMQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA'
-              alt=''
-            />
+            <img src={mechanicImg} alt='' />
           </HeaderRight>
         </Container>
       </HeaderSection>
@@ -223,6 +239,64 @@ const HomePage = () => {
           </div>
         </Container>
       </ExperienceSection>
+      <BrandsSection>
+        <Container>
+          <h3>Brands we Serve</h3>
+          <div>
+            <img src={logo1} alt='' />
+            <img src={logo2} alt='' />
+            <img src={logo3} alt='' />
+            <img src={logo4} alt='' />
+            <img src={logo5} alt='' />
+            <img src={logo1} alt='' />
+            <img src={logo2} alt='' />
+            <img src={logo3} alt='' />
+            <img src={logo4} alt='' />
+            <img src={logo5} alt='' />
+          </div>
+        </Container>
+      </BrandsSection>
+      <TestimonialSection>
+        <Container>
+          <h3>Our customers say the nicest things about our service</h3>
+          <Carousel
+            render={(
+              slide,
+              paginatedPosts,
+              NextSlide,
+              PreviousSlide,
+              firstLineRef,
+              secondLineRef,
+              thirdLineRef,
+              fourthLineRef
+            ) => (
+              <>
+                <TestimonialCardsWrapper>
+                  {paginatedPosts[slide].map((info, index) => (
+                    <TestimonialCard info={info} />
+                  ))}
+                </TestimonialCardsWrapper>
+                <CardsNavigationWrapper>
+                  <Lines>
+                    <div ref={firstLineRef}></div>
+                    <div ref={secondLineRef}></div>
+                    <div ref={thirdLineRef}></div>
+                    <div ref={fourthLineRef}></div>
+                  </Lines>
+                  <TestimonialNavigation>
+                    <div onClick={PreviousSlide}>
+                      <img src={testimonialArrowSl} alt='' />
+                    </div>
+                    <div onClick={NextSlide}>
+                      <img src={testimonialArrowLg} alt='' />
+                    </div>
+                  </TestimonialNavigation>
+                </CardsNavigationWrapper>
+              </>
+            )}
+          />
+        </Container>
+      </TestimonialSection>
     </main>
   );
 };
