@@ -8,6 +8,7 @@ const Carousel = ({ render }) => {
   // testimonial carousel cards
   let posts = [
     {
+      id: 1,
       logo: testimonialImg1,
       name: 'Jonathan Vallem',
       location: 'New york',
@@ -15,6 +16,7 @@ const Carousel = ({ render }) => {
         'I have got my car repaired at Finsweet many times before, they are good at what they do. Not only did they repair my car in a short comprehensive look on all the working',
     },
     {
+      id: 2,
       logo: testimonialImg1,
       name: 'Jonathan Vallem',
       location: 'New york',
@@ -22,6 +24,7 @@ const Carousel = ({ render }) => {
         'I have got my car repaired at Finsweet many times before, they are good at what they do. Not only did they repair my car in a short comprehensive look on all the working',
     },
     {
+      id: 3,
       logo: testimonialImg2,
       name: 'Smith Johnson',
       location: 'New york',
@@ -29,6 +32,7 @@ const Carousel = ({ render }) => {
         'I have got my car repaired at Finsweet many times before, they are good at what they do. Not only did they repair my car in a short comprehensive look on all the working',
     },
     {
+      id: 4,
       logo: testimonialImg2,
       name: 'Smith Johnson',
       location: 'New york',
@@ -36,6 +40,7 @@ const Carousel = ({ render }) => {
         'I have got my car repaired at Finsweet many times before, they are good at what they do. Not only did they repair my car in a short comprehensive look on all the working',
     },
     {
+      id: 5,
       logo: testimonialImg1,
       name: 'Jonathan Vallem',
       location: 'New york',
@@ -43,6 +48,7 @@ const Carousel = ({ render }) => {
         'I have got my car repaired at Finsweet many times before, they are good at what they do. Not only did they repair my car in a short comprehensive look on all the working',
     },
     {
+      id: 6,
       logo: testimonialImg1,
       name: 'Jonathan Vallem',
       location: 'New york',
@@ -50,6 +56,7 @@ const Carousel = ({ render }) => {
         'I have got my car repaired at Finsweet many times before, they are good at what they do. Not only did they repair my car in a short comprehensive look on all the working',
     },
     {
+      id: 7,
       logo: testimonialImg2,
       name: 'Smith Johnson',
       location: 'New york',
@@ -57,6 +64,7 @@ const Carousel = ({ render }) => {
         'I have got my car repaired at Finsweet many times before, they are good at what they do. Not only did they repair my car in a short comprehensive look on all the working',
     },
     {
+      id: 8,
       logo: testimonialImg2,
       name: 'Smith Johnson',
       location: 'New york',

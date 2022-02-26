@@ -11,7 +11,6 @@ const Card = styled.div`
   flex-direction: column;
   align-content: center;
   align-items: center;
-  /* justify-content: center; */
   gap: 12px;
   img {
     margin-top: 76px;
@@ -30,7 +29,6 @@ const ServicesCard = ({ icon, title }) => {
   return (
     <Card>
       <img src={icon} alt='' />
-      {console.log(icon)}
       <Title02>{title}</Title02>
     </Card>
   );
@@ -40,5 +38,5 @@ export default ServicesCard;
 
 ServicesCard.propTypes = {
   title: PropTypes.string.isRequired,
-  icon: PropTypes.element.isRequired,
+  icon: PropTypes.string.isRequired,
 };

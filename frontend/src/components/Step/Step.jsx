@@ -10,16 +10,12 @@ const StyledStep = styled.div`
   > div:first-child {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* align-content: center; */
-    /* text-align: center; */
   }
 `;
 
 const Line = styled.div`
   transform: rotate(90deg);
   width: 71px;
-  /* margin-bottom: 61.1px; */
   margin-top: 50px;
   border: 2px dashed #ff6433;
 `;
@@ -39,9 +35,6 @@ const Circle = styled.div`
     font-weight: bold;
     font-size: 32px;
     line-height: 24px;
-
-    /* identical to box height, or 75% */
-
     color: #ffffff;
   }
 `;
@@ -92,5 +85,5 @@ export default Step;
 Step.propTypes = {
   title: PropTypes.string.isRequired,
   body: PropTypes.string.isRequired,
-  number: PropTypes.number.isRequired,
+  number: PropTypes.string.isRequired,
 };

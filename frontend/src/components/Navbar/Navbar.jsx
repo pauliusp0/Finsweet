@@ -18,7 +18,6 @@ const StyledNavbar = styled.header`
 
 const Line = styled.div`
   opacity: 0.36;
-  /* Grey */
   border: 1px solid #939191;
   transform: rotate(90deg);
   width: 42px;
