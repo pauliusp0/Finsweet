@@ -30,6 +30,7 @@ const ServicesCard = ({ icon, title }) => {
   return (
     <Card>
       <img src={icon} alt='' />
+      {console.log(icon)}
       <Title02>{title}</Title02>
     </Card>
   );

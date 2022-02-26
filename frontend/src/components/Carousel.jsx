@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 
 import testimonialImg1 from '../assets/testimonial-img1.jpg';
 import testimonialImg2 from '../assets/testimonial-img2.jpg';
@@ -103,7 +103,6 @@ const Carousel = ({ render }) => {
   };
 
   const PreviousSlide = () => {
-    console.log(slide);
     switch (slide) {
       case 0:
         return (

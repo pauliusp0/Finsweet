@@ -388,3 +388,74 @@ export const TestimonialNavigation = styled.div`
     cursor: pointer;
   }
 `;
+
+// Faq section
+export const FaqSection = styled.section`
+  /* height: 1140px; */
+  background-color: var(--steelGray-color);
+  padding: 128px;
+  h3 {
+    text-align: center;
+    margin: 0 auto;
+  }
+`;
+
+export const FaqWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 94px;
+  gap: 12px;
+`;
+
+export const FaqCard = styled.div`
+  width: 896px;
+  background: #ffffff;
+  padding: 38px 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  > p {
+    width: 701.26px;
+    padding-top: 10px;
+  }
+`;
+
+export const FaqQuestionWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  > p {
+    height: 36px;
+  }
+`;
+
+export const FaqToggler = styled.div`
+  width: 51.08px;
+  height: 48px;
+  background-color: var(--primary-color);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  > div > hr:first-child {
+    position: absolute;
+    border: 2px solid #ffffff;
+    width: 17.03px;
+    height: 0px;
+  }
+  > div > hr:nth-child(2) {
+    position: absolute;
+    border: 2px solid #ffffff;
+    width: 17.03px;
+    height: 0px;
+    transform: rotate(-90deg);
+  }
+`;

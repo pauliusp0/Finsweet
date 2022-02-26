@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 // styles
 import {
@@ -31,6 +31,11 @@ import {
   TestimonialCardsWrapper,
   CardsNavigationWrapper,
   TestimonialNavigation,
+  FaqSection,
+  FaqWrapper,
+  FaqCard,
+  FaqToggler,
+  FaqQuestionWrapper,
 } from './HomePage.style';
 
 // icons
@@ -69,10 +74,12 @@ import ServicesCard from '../../components/ServiceCard/ServiceCard';
 import Banner from '../../components/Banner/Banner';
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import Carousel from '../../components/Carousel';
+import FaqQuestion from '../../components/FaqQuestion/FaqQuestion';
 
 const HomePage = () => {
   return (
     <main>
+      {/* ========================= HEADER ============================= */}
       <HeaderSection>
         <Container>
           <HeaderLeft>
@@ -118,6 +125,7 @@ const HomePage = () => {
           </HeaderRight>
         </Container>
       </HeaderSection>
+      {/* ========================= QUOTE ============================= */}
       <QuoteSection>
         <Container>
           <QuoteLeft>
@@ -169,6 +177,7 @@ const HomePage = () => {
           </QuoteRight>
         </Container>
       </QuoteSection>
+      {/* ========================= PROCESS ============================ */}
       <ProcessSection>
         <Container>
           <ProcessLeft>
@@ -200,6 +209,7 @@ const HomePage = () => {
           </ProcessRight>
         </Container>
       </ProcessSection>
+      {/* ========================= OFFER ============================== */}
       <OfferSection>
         <Container>
           <div>
@@ -218,7 +228,9 @@ const HomePage = () => {
           </div>
         </Container>
       </OfferSection>
+      {/* ========================= BANNER ============================= */}
       <Banner />
+      {/* ========================= EXPERIENCE ===========================*/}
       <ExperienceSection>
         <Container>
           <div>
@@ -239,6 +251,7 @@ const HomePage = () => {
           </div>
         </Container>
       </ExperienceSection>
+      {/* ========================= BRANDS ============================= */}
       <BrandsSection>
         <Container>
           <h3>Brands we Serve</h3>
@@ -256,6 +269,7 @@ const HomePage = () => {
           </div>
         </Container>
       </BrandsSection>
+      {/* ======================= TESTIMONIAL ============================= */}
       <TestimonialSection>
         <Container>
           <h3>Our customers say the nicest things about our service</h3>
@@ -297,6 +311,120 @@ const HomePage = () => {
           />
         </Container>
       </TestimonialSection>
+      {/* ========================= FAQ = ============================== */}
+      <FaqSection>
+        <Container>
+          <h3>Frequently Asked Questions</h3>
+          <FaqQuestion
+            render={(
+              firstQuestionOpened,
+              secondQuestionOpened,
+              thirdQuestionOpened,
+              fourthQuestionOpened,
+              fifthQuestionOpened,
+              openQuestion
+            ) => (
+              <FaqWrapper>
+                <FaqCard opened={firstQuestionOpened}>
+                  <FaqQuestionWrapper>
+                    <Title02>How long should a car repair take?</Title02>
+                    <FaqToggler>
+                      <div onClick={() => openQuestion(1)}>
+                        {!firstQuestionOpened && <hr />}
+                        <hr />
+                      </div>
+                    </FaqToggler>
+                  </FaqQuestionWrapper>
+                  {firstQuestionOpened && (
+                    <Body01>
+                      I have got my car repaired at Finsweet many times before,
+                      they are good at what they do. Not only did they repair my
+                      car I have got my car repaired at Finsweet I have got my
+                      car repaired at Finsweet
+                    </Body01>
+                  )}
+                </FaqCard>
+                <FaqCard opened={secondQuestionOpened}>
+                  <FaqQuestionWrapper>
+                    <Title02>How do I schedule my car's appointment ?</Title02>
+                    <FaqToggler>
+                      <div onClick={() => openQuestion(2)}>
+                        {!secondQuestionOpened && <hr />}
+                        <hr />
+                      </div>
+                    </FaqToggler>
+                  </FaqQuestionWrapper>
+                  {secondQuestionOpened && (
+                    <Body01>
+                      I have got my car repaired at Finsweet many times before,
+                      they are good at what they do. Not only did they repair my
+                      car I have got my car repaired at Finsweet I have got my
+                      car repaired at Finsweet
+                    </Body01>
+                  )}
+                </FaqCard>
+                <FaqCard opened={thirdQuestionOpened}>
+                  <FaqQuestionWrapper>
+                    <Title02>What are the repair services provided?</Title02>
+                    <FaqToggler>
+                      <div onClick={() => openQuestion(3)}>
+                        {!thirdQuestionOpened && <hr />}
+                        <hr />
+                      </div>
+                    </FaqToggler>
+                  </FaqQuestionWrapper>
+                  {thirdQuestionOpened && (
+                    <Body01>
+                      I have got my car repaired at Finsweet many times before,
+                      they are good at what they do. Not only did they repair my
+                      car I have got my car repaired at Finsweet I have got my
+                      car repaired at Finsweet
+                    </Body01>
+                  )}
+                </FaqCard>
+                <FaqCard opened={fourthQuestionOpened}>
+                  <FaqQuestionWrapper>
+                    <Title02>How do I find auto body shops near me?</Title02>
+                    <FaqToggler>
+                      <div onClick={() => openQuestion(4)}>
+                        {!fourthQuestionOpened && <hr />}
+                        <hr />
+                      </div>
+                    </FaqToggler>
+                  </FaqQuestionWrapper>
+                  {fourthQuestionOpened && (
+                    <Body01>
+                      I have got my car repaired at Finsweet many times before,
+                      they are good at what they do. Not only did they repair my
+                      car I have got my car repaired at Finsweet I have got my
+                      car repaired at Finsweet
+                    </Body01>
+                  )}
+                </FaqCard>
+                <FaqCard opened={fifthQuestionOpened}>
+                  <FaqQuestionWrapper>
+                    <Title02>Genuine spare parts during car repair?</Title02>
+                    <FaqToggler>
+                      <div onClick={() => openQuestion(5)}>
+                        {!fifthQuestionOpened && <hr />}
+                        <hr />
+                      </div>
+                    </FaqToggler>
+                  </FaqQuestionWrapper>
+                  {fifthQuestionOpened && (
+                    <Body01>
+                      I have got my car repaired at Finsweet many times before,
+                      they are good at what they do. Not only did they repair my
+                      car I have got my car repaired at Finsweet I have got my
+                      car repaired at Finsweet
+                    </Body01>
+                  )}
+                </FaqCard>
+              </FaqWrapper>
+            )}
+          />
+        </Container>
+      </FaqSection>
     </main>
   );
 };
