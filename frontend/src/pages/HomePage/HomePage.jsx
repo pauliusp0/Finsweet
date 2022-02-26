@@ -6,7 +6,6 @@ import {
   Body02,
   Caption,
   Container,
-  Title01,
   Title02,
 } from '../../components/Global.style';
 import {
@@ -74,7 +73,7 @@ import ServicesCard from '../../components/ServiceCard/ServiceCard';
 import Banner from '../../components/Banner/Banner';
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import Carousel from '../../components/Carousel';
-import FaqQuestion from '../../components/FaqQuestion/FaqQuestion';
+import FaqQuestion from '../../components/FaqQuestion';
 
 const HomePage = () => {
   return (
@@ -287,7 +286,7 @@ const HomePage = () => {
               <>
                 <TestimonialCardsWrapper>
                   {paginatedPosts[slide].map((info, index) => (
-                    <TestimonialCard info={info} />
+                    <TestimonialCard info={info} key={info.id} />
                   ))}
                 </TestimonialCardsWrapper>
                 <CardsNavigationWrapper>

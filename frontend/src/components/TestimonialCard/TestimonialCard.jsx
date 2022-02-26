@@ -28,7 +28,6 @@ export const TestimonialCardStyled = styled.div`
 
 const TestimonialCard = ({ info }) => {
   const { logo, name, location, description } = info;
-  console.log(info);
   return (
     <TestimonialCardStyled>
       <div>

@@ -391,7 +391,6 @@ export const TestimonialNavigation = styled.div`
 
 // Faq section
 export const FaqSection = styled.section`
-  /* height: 1140px; */
   background-color: var(--steelGray-color);
   padding: 128px;
   h3 {
