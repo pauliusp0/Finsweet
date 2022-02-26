@@ -11,6 +11,7 @@ import Logo from '../../assets/Logo-white.svg';
 
 import { Body01, Body02, Container, Title02 } from '../Global.style';
 
+// Top footer style
 const FooterTopStyled = styled.section`
   height: 549px;
   background: var(--black-color);
@@ -81,6 +82,7 @@ const FooterTop = () => {
   );
 };
 
+// Bottom footer style
 const FooterBottomStyled = styled.section`
   height: 157px;
   width: 100%;
