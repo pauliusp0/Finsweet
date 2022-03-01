@@ -156,12 +156,6 @@ export const QuoteLeft = styled.div`
   }
   > div:last-child {
     margin-left: 63px;
-    display: flex;
-    gap: 21px;
-    align-items: center;
-    p {
-      opacity: 1;
-    }
   }
 `;
 export const Feature = styled.div`
@@ -264,8 +258,10 @@ export const OfferSection = styled.section`
       margin: 0 auto;
     }
     > div:last-child {
-      display: flex;
-      flex-wrap: wrap;
+      /* display: flex; */
+      /* flex-wrap: wrap; */
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 8px;
       width: 100%;
       margin-top: 64px;

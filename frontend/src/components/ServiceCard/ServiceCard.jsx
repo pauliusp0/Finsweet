@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const Card = styled.div`
   background: #ffffff;
-  width: 316px;
+  /* width: 316px; */
   height: 232px;
   display: flex;
   flex-direction: column;
