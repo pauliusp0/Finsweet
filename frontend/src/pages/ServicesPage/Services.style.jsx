@@ -76,3 +76,66 @@ export const ServicesRight = styled.div`
   gap: 32px;
   width: 50%;
 `;
+
+// HOW 1 SECTION STYLE
+
+export const How1Section = styled.section`
+  padding: 80px 0 128px 0;
+  > section {
+    display: flex;
+  }
+`;
+
+export const How1Left = styled.div`
+  width: 50%;
+
+  h3 {
+    width: 489px;
+    margin-bottom: 53px;
+  }
+  > div {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 37px;
+    > p {
+      width: 443px;
+    }
+    > img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+`;
+
+export const How1Right = styled.div`
+  width: 50%;
+  display: flex;
+  gap: 16px;
+`;
+
+// HOW 2 SECTION STYLE
+
+export const How2Section = styled.section`
+  padding-bottom: 128px;
+  > section {
+    display: flex;
+    gap: 88px;
+  }
+`;
+
+export const How2SectionLeft = styled.div`
+  display: flex;
+  gap: 16px;
+`;
+
+export const How2SectionRight = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  > p {
+    width: 512px;
+  }
+  > button {
+    width: 203px;
+  }
+`;
