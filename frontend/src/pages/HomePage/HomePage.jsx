@@ -44,7 +44,6 @@ import emptyStar from '../../assets/empty-star.svg';
 import wrenchIcon from '../../assets/wrench-icon.svg';
 import mechanicIcon from '../../assets/mechanic-icon.svg';
 import moneyIcon from '../../assets/money-icon.svg';
-import arrow from '../../assets/arrow.svg';
 import wheelRepairIcon from '../../assets/wheel-repair-icon.svg';
 import oilFilterIcon from '../../assets/oil-filter-icon.svg';
 import insuranceIcon from '../../assets/insurance-icon.svg';
@@ -74,6 +73,7 @@ import Banner from '../../components/Banner/Banner';
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import Carousel from '../../components/Carousel';
 import FaqQuestion from '../../components/FaqQuestion';
+import Arrow from '../../components/Arrow/Arrow';
 
 const HomePage = () => {
   return (
@@ -159,10 +159,7 @@ const HomePage = () => {
                 </Body02>
               </div>
             </Feature>
-            <div>
-              <Body01>Know more about us</Body01>
-              <img src={arrow} alt='' />
-            </div>
+            <Arrow text='Know more about us' />
           </QuoteLeft>
           <QuoteRight>
             <h3>Get a quote for the car service</h3>

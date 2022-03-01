@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-// HEADER SECTION STYLE
+//  HEADER SECTION STYLE
 
 export const HeaderSection = styled.section`
   padding: 80px 0 128px 0;
@@ -41,4 +41,38 @@ export const HeaderRight = styled.div`
     margin-top: 48px;
     width: 203px;
   }
+`;
+
+// SERVICES SECTION STYLE
+
+export const ServicesSection = styled.section`
+  padding: 80px 0 128px 0;
+  background: #f5f5f5;
+  height: 1016px;
+  > section {
+    display: flex;
+    gap: 32px;
+  }
+`;
+
+export const ServicesLeft = styled.div`
+  width: 624px;
+  height: 760px;
+  background-color: #ffffff;
+  padding: 64px 48px;
+
+  > div > p {
+    opacity: 0.6;
+    margin: 16px 0px 32px 0px;
+  }
+  > div > h3 {
+    margin-top: 28px;
+  }
+`;
+
+export const ServicesRight = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  width: 50%;
 `;
