@@ -23,7 +23,6 @@ import {
   ProcessLeft,
   ProcessRight,
   OfferSection,
-  ExperienceSection,
   BrandsSection,
   TestimonialSection,
   Lines,
@@ -74,6 +73,7 @@ import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import Carousel from '../../components/Carousel';
 import FaqQuestion from '../../components/FaqQuestion';
 import Arrow from '../../components/Arrow/Arrow';
+import ExperienceBanner from '../../components/ExperienceBanner/ExperienceBanner';
 
 const HomePage = () => {
   return (
@@ -227,26 +227,7 @@ const HomePage = () => {
       {/* ========================= BANNER ============================= */}
       <Banner />
       {/* ========================= EXPERIENCE ===========================*/}
-      <ExperienceSection>
-        <Container>
-          <div>
-            <h2>20+</h2>
-            <Title02>Professional</Title02>
-          </div>
-          <div>
-            <h2>10+</h2>
-            <Title02>Years Experience</Title02>
-          </div>
-          <div>
-            <h2>12K+</h2>
-            <Title02>Service Closed</Title02>
-          </div>
-          <div>
-            <h2>100%</h2>
-            <Title02>Customer Satisfaction</Title02>
-          </div>
-        </Container>
-      </ExperienceSection>
+      <ExperienceBanner />
       {/* ========================= BRANDS ============================= */}
       <BrandsSection>
         <Container>

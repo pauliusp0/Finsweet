@@ -258,29 +258,12 @@ export const OfferSection = styled.section`
       margin: 0 auto;
     }
     > div:last-child {
-      /* display: flex; */
-      /* flex-wrap: wrap; */
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 8px;
       width: 100%;
       margin-top: 64px;
     }
-  }
-`;
-
-// Experience section
-export const ExperienceSection = styled.section`
-  height: 210px;
-  background-color: var(--lightgray-color);
-
-  h2 {
-    color: var(--secondary-color);
-  }
-  > section {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 48px;
   }
 `;
 
@@ -387,7 +370,7 @@ export const TestimonialNavigation = styled.div`
 
 // Faq section
 export const FaqSection = styled.section`
-  background-color: var(--steelGray-color);
+  background: var(--steelGray-color);
   padding: 128px;
   h3 {
     text-align: center;
