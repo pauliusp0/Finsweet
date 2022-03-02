@@ -10,14 +10,15 @@ const StyledStep = styled.div`
   > div:first-child {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
 `;
 
 const Line = styled.div`
+  border: 2px dashed #ff6433;
   transform: rotate(90deg);
   width: 71px;
-  margin-top: 50px;
-  border: 2px dashed #ff6433;
+  margin-bottom: 45px;
 `;
 
 const Circle = styled.div`
@@ -35,20 +36,19 @@ const Circle = styled.div`
     font-weight: bold;
     font-size: 32px;
     line-height: 24px;
+
+    /* identical to box height, or 75% */
+
     color: #ffffff;
   }
 `;
 
 const Text = styled.div`
   width: 336px;
-  height: 152px;
-  margin-left: 24px;
+  margin-left: 34px;
   margin-top: 13px;
   p:first-child {
     margin-bottom: 8px;
-  }
-  p:last-child {
-    height: 96px;
   }
 `;
 
@@ -85,5 +85,5 @@ export default Step;
 Step.propTypes = {
   title: PropTypes.string.isRequired,
   body: PropTypes.string.isRequired,
-  number: PropTypes.string.isRequired,
+  number: PropTypes.number.isRequired,
 };
