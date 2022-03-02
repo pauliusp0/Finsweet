@@ -6,6 +6,7 @@ import ServicesPage from './pages/ServicesPage/ServicesPage';
 import BlogPage from './pages/BlogPage/BlogPage';
 import ContactPage from './pages/ContactPage/ContactPage';
 import Footer from './components/Footer/Footer';
+import ServiceSinglePage from './pages/ServiceSinglePage/ServiceSinglePage';
 
 function App() {
   return (
@@ -15,9 +16,13 @@ function App() {
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route path='/about-us' component={AboutUsPage} />
-          <Route path='/services' component={ServicesPage} />
+          <Route exact path='/services' component={ServicesPage} />
           <Route path='/blog' component={BlogPage} />
           <Route path='/contact' component={ContactPage} />
+          <Route
+            path='/services/auto-diagnostics'
+            component={ServiceSinglePage}
+          />
         </Switch>
         <Footer />
       </Router>

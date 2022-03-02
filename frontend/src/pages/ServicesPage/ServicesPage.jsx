@@ -37,6 +37,7 @@ import diagnosticsIcon from '../../assets/diagnostics-icon.svg';
 import bodyWorkIcon from '../../assets/body-work-icon.svg';
 import batteriesIcon from '../../assets/batteries-icon.svg';
 import Banner from '../../components/Banner/Banner';
+import { Link } from 'react-router-dom';
 
 const AboutUsPage = () => {
   return (
@@ -71,11 +72,16 @@ const AboutUsPage = () => {
                 up ecstatic. Through True Rich Attended does no end it his
                 mother.{' '}
               </Title02>
-              <Arrow text='See service details' />
+              <Link to='/services/auto-diagnostics'>
+                <Arrow text='See service details' />
+              </Link>
             </div>
           </ServicesLeft>
           <ServicesRight>
-            <ServicesCard title='Auto Dignostics' icon={diagnosticsIcon} />
+            <Link to='/services/auto-diagnostics'>
+              <ServicesCard title='Auto Dignostics' icon={diagnosticsIcon} />
+            </Link>
+
             <ServicesCard title='Engine Repair' icon={engineRepairIcon} />
             <ServicesCard icon={bodyWorkIcon} title='Body Work' />
             <ServicesCard icon={batteriesIcon} title='Batteries' />
