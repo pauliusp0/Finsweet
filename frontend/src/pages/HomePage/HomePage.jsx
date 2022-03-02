@@ -23,7 +23,6 @@ import {
   ProcessLeft,
   ProcessRight,
   OfferSection,
-  ExperienceSection,
   BrandsSection,
   TestimonialSection,
   Lines,

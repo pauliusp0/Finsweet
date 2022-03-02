@@ -154,16 +154,33 @@ export const FeatureBlock = styled.div`
     flex-direction: column;
     align-items: center;
     align-content: center;
-    /* width: 295px; */
     padding: 88px 66px;
 
     > img {
       width: 64px;
       margin: 0 auto;
-      /* margin-bottom: 24px; */
     }
     > p:first-of-type {
       margin: 24px 0px 16px 0px;
     }
   }
+`;
+
+//  TEAM SECTION STYLE
+
+export const TeamSection = styled.section`
+  padding: 128px 0 140px 0;
+  > section {
+    > h1 {
+      padding-bottom: 66px;
+      text-align: center;
+    }
+  }
+`;
+
+export const TeamWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-gap: 48px 32px;
 `;

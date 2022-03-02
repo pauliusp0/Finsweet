@@ -17,6 +17,8 @@ import {
   StepsLeft,
   StepsRight,
   StepsSection,
+  TeamSection,
+  TeamWrapper,
 } from './AboutUs.style';
 
 // images
@@ -24,6 +26,12 @@ import mechanicImg from '../../assets/about-us-mechanic-img.png';
 import stepsRightImg from '../../assets/Steps-right.png';
 import colorSectionImg1 from '../../assets/color-section-1.png';
 import colorSectionImg2 from '../../assets/color-section-2.png';
+import teamMember1 from '../../assets/team-member1.png';
+import teamMember2 from '../../assets/team-member2.png';
+import teamMember3 from '../../assets/team-member3.png';
+import teamMember4 from '../../assets/team-member4.png';
+import teamMember5 from '../../assets/team-member5.png';
+import teamMember6 from '../../assets/team-member6.png';
 
 // icon
 import featureIcon1 from '../../assets/feature-icon1.png';
@@ -33,6 +41,8 @@ import featureIcon3 from '../../assets/feature-icon3.png';
 // components
 import Step from '../../components/Step/Step';
 import ExperienceBanner from '../../components/ExperienceBanner/ExperienceBanner';
+import TeamMember from '../../components/TeamMember/TeamMember';
+import Banner from '../../components/Banner/Banner';
 
 const ServicesPage = () => {
   return (
@@ -160,6 +170,46 @@ const ServicesPage = () => {
           <ExperienceBanner />
         </Container>
       </FeatureSection>
+      {/* =============================== TEAM SECTION ========================= */}
+      <TeamSection>
+        <Container>
+          <h1>Meet our Team</h1>
+          <TeamWrapper>
+            <TeamMember
+              img={teamMember1}
+              title='Javena Melo'
+              body='Founder, Director'
+            />
+            <TeamMember
+              img={teamMember2}
+              title='Paul Honson'
+              body='Head Technician'
+            />
+            <TeamMember
+              img={teamMember3}
+              title='Devon Lane'
+              body='Technician'
+            />
+            <TeamMember
+              img={teamMember4}
+              title='Jalen Davies'
+              body='Marketing Manager'
+            />
+            <TeamMember
+              img={teamMember5}
+              title='Kylee Danford'
+              body='Sales Manager'
+            />
+            <TeamMember
+              img={teamMember6}
+              title='Luisa Wilson'
+              body='Support Assistant'
+            />
+          </TeamWrapper>
+        </Container>
+      </TeamSection>
+      {/* =============================== BANNER  ========================= */}
+      <Banner />
     </main>
   );
 };
