@@ -1,9 +1,16 @@
 import React from 'react';
 import Button from '../../components/Buttons/Button';
-import { Body01, Container, Title02 } from '../../components/Global.style';
+import {
+  Body01,
+  Container,
+  Title01,
+  Title02,
+} from '../../components/Global.style';
 import {
   ColorCard,
   ColorSection,
+  FeatureBlock,
+  FeatureSection,
   HeaderLeft,
   HeaderRight,
   HeaderSection,
@@ -18,8 +25,14 @@ import stepsRightImg from '../../assets/Steps-right.png';
 import colorSectionImg1 from '../../assets/color-section-1.png';
 import colorSectionImg2 from '../../assets/color-section-2.png';
 
+// icon
+import featureIcon1 from '../../assets/feature-icon1.png';
+import featureIcon2 from '../../assets/feature-icon2.png';
+import featureIcon3 from '../../assets/feature-icon3.png';
+
 // components
 import Step from '../../components/Step/Step';
+import ExperienceBanner from '../../components/ExperienceBanner/ExperienceBanner';
 
 const ServicesPage = () => {
   return (
@@ -112,6 +125,41 @@ const ServicesPage = () => {
           </div>
         </ColorCard>
       </ColorSection>
+      {/* ================================= FEATURES SECTION ========================= */}
+      <FeatureSection>
+        <Container>
+          <h2>Services we provide to our valued customers</h2>
+          <FeatureBlock>
+            <div>
+              <img src={featureIcon1} alt='' />
+              <Title01>Convenient Service</Title01>
+              <Body01>
+                Through True Rich Attended does no end it his mother since real
+                had half every him end it his mother
+              </Body01>
+            </div>
+            <hr />
+            <div>
+              <img src={featureIcon2} alt='' />
+              <Title01>Expert Mechanics</Title01>
+              <Body01>
+                Through True Rich Attended does no end it his mother since real
+                had half every him end it his mother
+              </Body01>
+            </div>
+            <hr />
+            <div>
+              <img src={featureIcon3} alt='' />
+              <Title01>Transparent Pricing</Title01>
+              <Body01>
+                Through True Rich Attended does no end it his mother since real
+                had half every him end it his mother
+              </Body01>
+            </div>
+          </FeatureBlock>
+          <ExperienceBanner />
+        </Container>
+      </FeatureSection>
     </main>
   );
 };

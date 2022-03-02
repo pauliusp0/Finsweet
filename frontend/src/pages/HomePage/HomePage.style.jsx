@@ -269,21 +269,6 @@ export const OfferSection = styled.section`
   }
 `;
 
-// Experience section
-export const ExperienceSection = styled.section`
-  height: 210px;
-  background-color: var(--lightgray-color);
-
-  h2 {
-    color: var(--secondary-color);
-  }
-  > section {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 48px;
-  }
-`;
-
 // Brands section
 export const BrandsSection = styled.section`
   height: 611px;
@@ -387,7 +372,7 @@ export const TestimonialNavigation = styled.div`
 
 // Faq section
 export const FaqSection = styled.section`
-  background-color: var(--steelGray-color);
+  background: var(--steelGray-color);
   padding: 128px;
   h3 {
     text-align: center;

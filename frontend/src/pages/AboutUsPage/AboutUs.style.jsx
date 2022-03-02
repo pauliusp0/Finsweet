@@ -114,3 +114,56 @@ export const ColorCard = styled.div`
     }
   }
 `;
+
+//  FEATURES SECTION STYLE
+
+export const FeatureSection = styled.section`
+  padding: 80px 0 128px 0;
+  background: #f8f8f8;
+  > section {
+    > h2 {
+      width: 861px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    > section {
+      background: transparent;
+      padding-top: 16px;
+    }
+  }
+`;
+
+export const FeatureBlock = styled.div`
+  height: 424px;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+  margin-top: 64px;
+  display: flex;
+
+  > hr {
+    height: 424px;
+    border: 2px solid #f2f2f2;
+  }
+
+  /* DE */
+  box-shadow: 11px 130px 100px 30px rgba(0, 0, 0, 0.02);
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    /* width: 295px; */
+    padding: 88px 66px;
+
+    > img {
+      width: 64px;
+      margin: 0 auto;
+      /* margin-bottom: 24px; */
+    }
+    > p:first-of-type {
+      margin: 24px 0px 16px 0px;
+    }
+  }
+`;
