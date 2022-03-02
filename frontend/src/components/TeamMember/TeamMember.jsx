@@ -4,7 +4,7 @@ import { Title02, Body02 } from '../Global.style';
 import PropTypes from 'prop-types';
 
 const Person = styled.div`
-  position: absolute;
+  position: relative;
   width: 405px;
   height: 432px;
   display: flex;
