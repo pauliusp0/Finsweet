@@ -31,6 +31,10 @@ code {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   /* Heading (h1) */
   font-family: Manrope;
