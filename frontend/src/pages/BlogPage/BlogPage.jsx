@@ -33,6 +33,7 @@ import BlogFullImage6 from '../../assets/blog-full-image-6.png';
 import Button from '../../components/Buttons/Button';
 import Arrow from '../../components/Arrow/Arrow';
 import Banner from '../../components/Banner/Banner';
+import { Link } from 'react-router-dom';
 
 const BlogPage = () => {
   return (
@@ -71,7 +72,9 @@ const BlogPage = () => {
               makes and models of cars, no matter the cause. This includes, We
               provide a full range of front end mechanical.
             </Body02>
-            <Arrow text='Read more' />
+            <Link to='/blog/1'>
+              <Arrow text='Read more' />
+            </Link>
           </BlogFourLeft>
           <BlogFourRight>
             <div>
